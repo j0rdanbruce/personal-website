@@ -1,0 +1,30 @@
+.navbar-container {
+    position: absolute;
+    margin: 25px auto auto auto;
+    right: 10%;
+    font-size: 25px;
+}
+
+.navbar-container ul {
+    background-color: rgb(12,15,26);
+    list-style-type: none;
+}
+
+.navbar-container li{
+    display: inline;
+}
+
+.navbar-container ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*
+.navbar-container li a:hover {
+    background-color: grey;
+}
+*/

@@ -7,6 +7,9 @@ import reportWebVitals from './reportWebVitals';
 // Importing the Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//Imports for components go here
+import './component/NavigationBar/NavigationBar.css';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

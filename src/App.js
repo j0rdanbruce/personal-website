@@ -1,4 +1,4 @@
-import NavigationBar from './component/NavigationBar'
+import NavigationBar from './component/NavigationBar/NavigationBar.js'
 import Home from './component/Home';
 import Skills from './component/Skills';
 
