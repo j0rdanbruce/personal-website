@@ -7,8 +7,19 @@ const NavLink = (props) => {
     setLinkName(navLinkName);
   }
 
+  function handleMouseLeave() {
+    setLinkName(null);
+  }
+
   return (
-    <li><a className="navbar-link" href={navLinkName} onMouseEnter={handleMouseHover}> {navLinkName} </a></li>
+    <li><a
+          className="navbar-link"
+          id={navLinkName}
+          href={navLinkName}
+          onMouseEnter={handleMouseHover}
+          onMouseLeave={handleMouseLeave}
+        > {navLinkName}
+    </a></li>
   );
 }
 
@@ -22,17 +33,28 @@ const NavigationBar = () => {
     );
   });
 
-  function handleLinkColorChange(linkName) {
+  function changeColorLink(linkName) {
     const navLinks = document.getElementsByClassName('navbar-link');
 
-    //for loop through links
-    //if node.innertext !== linkname:
-      //set color text to grey
+    if (!linkName) {
+      for (const navLink of navLinks) {
+        if (navLink.id !== linkName) {
+          navLink.style.color = 'white';
+        }
+      }
+    } else {
+      for (const navLink of navLinks) {
+        if (navLink.id !== linkName) {
+          navLink.style.color = 'grey';
+        }
+      }
+    }
   }
 
   useEffect(() => {
-    
-  }, []);
+    changeColorLink(linkName);
+
+  }, [linkName]);
 
   return (
     <div className="navbar-container">
