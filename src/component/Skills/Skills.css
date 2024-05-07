@@ -1,0 +1,19 @@
+/*
+-CSS file for the Skills component.
+*/
+
+.skills-page {
+    overflow: hidden;
+}
+
+.page-title {
+    color: white;
+}
+
+.button-container {
+    display: inline-block;
+}
+
+.skill-card {
+    transition: translate 0.5s;
+}
