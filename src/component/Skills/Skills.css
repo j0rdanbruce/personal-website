@@ -13,7 +13,7 @@ html {
 .page-title {
     position: relative;
     margin-top: 3%;
-    left: 10%;
+    margin-left: 10%;
     width: 55%;
 }
 
@@ -67,9 +67,29 @@ html {
 }
 
 .skills-table {
-    margin: 3% auto;
+    margin: 3% 9%;
 }
 
 .skill-card {
+    position: absolute;
+    width: 425px;
+    min-height: 475px;
+    border-radius: 7% !important;
+    margin: auto 15px;
+    padding: 20% 10% 15%;
+    background-color: rgb(12,15,26) !important;
+
     transition: translate 0.5s;
+}
+
+.skill-card-title {
+    margin: 5% auto 5% !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.skill-card-description {
+    font-size: 1.3rem !important;
+    color: white !important;
 }
