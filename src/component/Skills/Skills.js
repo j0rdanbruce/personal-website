@@ -8,6 +8,19 @@ import useWindowDimensions from '../../HelperFunctions'
 //image logo imports go here
 import html5 from "../../skill_icons/html5.png";
 
+const PageTitle = () => {
+
+  return (
+    <div className="page-title">
+      <p className="skills-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY SKILLS</p>
+      <div className="bottom-container">
+        <h2 className="skills-header">My list of technical skills</h2>
+        <ScrollButtons />
+      </div>
+    </div>
+  );
+}
+
 const ScrollButtons = () => {
 
   /**
@@ -48,8 +61,8 @@ const ScrollButtons = () => {
 
   return (
     <div className="button-container">
-      <Button className="rounded-circle" id="left-btn" onClick={slideLeft}>left</Button>
-      <Button className="rounded-circle" id="right-btn" onClick={slideRight}>right</Button>
+      <Button className="rounded-circle" id="left-btn" onClick={slideLeft}>&#8592;</Button>
+      <Button className="rounded-circle" id="right-btn" onClick={slideRight}>&#8594;</Button>
     </div>
   );
 }
@@ -61,6 +74,7 @@ const SkillCard = ({props}) => {
     position: 'relative',
     width: '425px',
     height: '470px',
+    borderRadius: '7%',
     margin: 'auto 15px'
   }
   const cardImageStyle = {
@@ -82,12 +96,15 @@ const SkillCard = ({props}) => {
 const Skills = () => {
   const { height, width } = useWindowDimensions();
   const skillsData = [
-    {skill: 'HTML & CSS', description: 'temporry words', logo: html5},
-    {skill: 'Javascript', description: 'temporry words'},
-    {skill: 'React JS', description: 'temporry words'},
-    {skill: 'Python', description: 'temporry words'},
-    {skill: 'Flask', description: 'temporry words'},
-    {skill: 'SQL', description: 'temporry words'}
+    {skill: 'HTML & CSS', description: 'Industry standard markup language for documents displayed in a web browser.', logo: html5},
+    {skill: 'JavaScript', description: 'Programming language typically used alongside HTML and CSS on the client side for web appplications.'},
+    {skill: 'React JS', description: 'Popular frontend JavaScript library used to develop mobile and web applications.'},
+    {skill: 'React Bootstrap', description: 'Dynamic frontend framework that combines the power of React with the creativity of Bootstrap (CSS framework).'},
+    {skill: 'Flask', description: 'Microservice framework for Python that provides versatility for server-side functionality.'},
+    {skill: 'Python', description: 'High-level programming language known for usability in software applications, cybersecuirty, etc.'},
+    {skill: 'Java', description: 'A programming language used widely for object oriented programming and server-side functionality.'},
+    {skill: 'C++', description: 'Programming language commonly used in developing embedded systems and operating systems.'},
+    {skill: 'SQL', description: 'The standard language for relational database creation and manipulation.'}
   ];
   const skillsMap = skillsData.map((skill) => {
     return (
@@ -104,10 +121,7 @@ const Skills = () => {
 
   return (
     <div className="skills-page" style={style}>
-      <h1 className="page-title">/ MY SKILLS</h1>
-      <p>My list of techincal skills</p>
-      <ScrollButtons />
-
+      <PageTitle />
       <table className="skills-table">
         <tr>{skillsMap}</tr>
       </table>

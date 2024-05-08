@@ -2,16 +2,72 @@
 -CSS file for the Skills component.
 */
 
+html {
+    font-size: 100%;
+}
+
 .skills-page {
     overflow: hidden;
 }
 
 .page-title {
-    color: white;
+    position: relative;
+    margin-top: 3%;
+    left: 10%;
+    width: 55%;
+}
+
+.bottom-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .button-container {
     display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.rounded-circle {
+    height: 85px;
+    width: 85px;
+    margin: 10px;
+    background-color: rgb(12,15,26) !important;
+    border: none !important;
+    font-size: 3rem !important;
+    color: white !important;
+    
+    transition: height 0.5s !important;
+    transition: width 0.5s !important;
+  }
+
+  .rounded-circle:hover {
+    height: 80px !important;
+    width: 80px !important;
+    background-color: rgb(0,122,255) !important;
+  }
+
+.skills-header {
+    position: relative;
+    color: white;
+}
+
+.skills-subtitle {
+    color: white;
+    font-size: 1.50em;
+    font-weight: bold;
+}
+
+.skills-header {
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+
+.skills-table {
+    margin: 3% auto;
 }
 
 .skill-card {
