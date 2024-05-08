@@ -1,0 +1,66 @@
+/*
+styling sheet for the Home Page component.
+*/
+
+.quick-info-table {
+    position: absolute;
+    width: 20%;
+    top: 16%;
+    right: 10%;
+}
+
+.quick-info-table tr {
+    height: 100%;
+    border-bottom: 0.2px solid rgb(213, 213, 213);
+}
+
+.quick-info-title {
+    margin: 10% auto 10%;
+    color: white;
+    font-weight: bold;
+}
+
+.quick-info-description {
+    margin: 0% 0% 15%;
+    color: rgb(213, 213, 213);
+    font-size: 1.1em;
+}
+
+.quick-info-link {
+    position: relative;
+    display: inline-block;
+    bottom: 20px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+
+    /* The css animation code for the blue swipe color transition. */
+    background: linear-gradient(to right, rgb(0,122,255), rgb(0,122,255) 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s ease;
+}
+.quick-info-link:hover {
+    background-position: 0 100%;
+}
+/* END code for the vlue swipe color transition. */
+
+.arrow-link {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 25px;
+    color: white;
+
+    transition: transform 1s;
+}
+
+/*
+.quick-info-link:hover .arrow-link {
+    transform: translateX(30px);
+}
+*/

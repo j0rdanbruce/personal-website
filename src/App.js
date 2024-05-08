@@ -1,5 +1,5 @@
 import NavigationBar from './component/NavigationBar/NavigationBar.js'
-import Home from './component/Home';
+import Home from './component/Home/Home.js';
 import Skills from './component/Skills/Skills.js';
 
 function App() {
