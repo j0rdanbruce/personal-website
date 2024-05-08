@@ -32,6 +32,6 @@ START: CSS animation causes all anchors to turn grey except the hovered anchor t
 }
 
 .navbar-container .navbar-link:hover {
-    color: white;
+    color: rgb(0,122,255);
 }
 /*END*/
