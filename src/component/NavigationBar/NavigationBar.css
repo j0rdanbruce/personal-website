@@ -21,17 +21,20 @@
     padding: 14px 16px;
     font-weight: bold;
     text-decoration: none;
+
     transition: color 0.5s;
+    transition: filter 0.5s;
 }
 
 /*
 START: CSS animation causes all anchors to turn grey except the hovered anchor tag.
 */
 .navbar-container:hover .navbar-link {
-    color: rgb(100, 98, 98);
+    filter: blur(2px);
 }
 
 .navbar-container .navbar-link:hover {
     color: rgb(0,122,255);
+    filter: none;
 }
 /*END*/
