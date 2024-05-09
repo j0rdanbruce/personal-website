@@ -22,3 +22,7 @@ export default function useWindowDimensions() {
 
   return windowDimensions;
 }
+
+export function scrollToElement(element) {
+  element.scrollIntoView();
+}

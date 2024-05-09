@@ -6,16 +6,16 @@ import Button from "react-bootstrap/Button";
 import useWindowDimensions from '../../HelperFunctions'
 
 //image logo imports go here
-import html5 from "../../skill_icons/html5.png";
-import aws from "../../skill_icons/aws.png";
-import bootstrap from "../../skill_icons/bootstrap.png";
-import c from "../../skill_icons/c.png";
-import flask from "../../skill_icons/flask.png";
-import java from "../../skill_icons/java.png";
-import js from "../../skill_icons/js.png";
-import react from "../../skill_icons/react.png";
-import sql from "../../skill_icons/sql.png";
-import python from "../../skill_icons/python.png";
+import html5 from "../../Images/skill_icons/html5.png";
+import aws from "../../Images/skill_icons/aws.png";
+import bootstrap from "../../Images/skill_icons/bootstrap.png";
+import c from "../../Images/skill_icons/c.png";
+import flask from "../../Images/skill_icons/flask.png";
+import java from "../../Images/skill_icons/java.png";
+import js from "../../Images/skill_icons/js.png";
+import react from "../../Images/skill_icons/react.png";
+import sql from "../../Images/skill_icons/sql.png";
+import python from "../../Images/skill_icons/python.png";
 
 const PageTitle = () => {
 
