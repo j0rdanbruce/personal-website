@@ -1,0 +1,61 @@
+
+
+.projects-title {
+    position: absolute;
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 10%;
+    border: solid white 1px;
+}
+
+.projects-subtitle {
+    color: white;
+    font-size: 1.50rem;
+    font-weight: bold;
+}
+
+.projects-header {
+    color: white;
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+
+.projects-subheader {
+    color: rgb(0,122,255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+     /* The css animation code for the blue swipe color transition. */
+     background: linear-gradient(to right, rgb(0,122,255), rgb(0,122,255) 50%, white 50%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-size: 200% 100%;
+     background-position: 100%;
+     transition: background-position 0.7s ease;
+}
+.projects-subheader:hover {
+    background-position: 0 100%;
+}
+/* END code for the vlue swipe color transition. */
+
+.project-card {
+    width: 425px;
+    min-height: 475px;
+    border-radius: 7%;
+    background-color: rgb(35,41,68);
+}
+.project-card h3, p {
+    color: white;
+}
+
+#card-1 {
+    position: relative;
+    top: 20%;
+    left: 60%;
+}
+#card-2 {
+    position: relative;
+    top: 30%;
+}
