@@ -1,0 +1,95 @@
+/*
+-CSS file for the Skills component.
+*/
+
+html {
+    font-size: 100%;
+}
+
+.skills-page {
+    overflow: hidden;
+}
+
+.page-title {
+    position: relative;
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 55%;
+}
+
+.bottom-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-container {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.rounded-circle {
+    height: 85px;
+    width: 85px;
+    margin: 10px;
+    background-color: rgb(12,15,26) !important;
+    border: none !important;
+    font-size: 3rem !important;
+    color: white !important;
+    
+    transition: height 0.5s !important;
+    transition: width 0.5s !important;
+  }
+
+  .rounded-circle:hover {
+    height: 80px !important;
+    width: 80px !important;
+    background-color: rgb(0,122,255) !important;
+  }
+
+.skills-header {
+    position: relative;
+    color: white;
+}
+
+.skills-subtitle {
+    color: white;
+    font-size: 1.50em;
+    font-weight: bold;
+}
+
+.skills-header {
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+
+.skills-table {
+    margin: 3% 9%;
+}
+
+.skill-card {
+    position: absolute;
+    width: 425px;
+    min-height: 475px;
+    border-radius: 7% !important;
+    margin: auto 15px;
+    padding: 20% 10% 15%;
+    background-color: rgb(12,15,26) !important;
+
+    transition: translate 0.5s;
+}
+
+.skill-card-title {
+    margin: 5% auto 5% !important;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.skill-card-description {
+    font-size: 1.3rem !important;
+    color: white !important;
+}

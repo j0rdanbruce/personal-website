@@ -45,17 +45,47 @@
     min-height: 475px;
     border-radius: 7%;
     background-color: rgb(35,41,68);
+
+    transition: all 0.4s ease;
 }
 .project-card h3, p {
     color: white;
 }
+body:has(.project-card:hover) .project-card {
+    opacity: 0.5;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
 
 #card-1 {
-    position: relative;
+    position: absolute;
     top: 20%;
-    left: 60%;
+    right: 10%;
 }
 #card-2 {
-    position: relative;
+    position: absolute;
     top: 30%;
+    left: 30%;
+}
+
+.tech-skill-container {
+    position: absolute;
+    bottom: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid white 1px;
+}
+
+.tech-skill {
+    height: 35px;
+    min-width: fit-content;
+    margin: 0 8px 7px;
+    padding: 1.1% 4%;
+    border-radius: 5%;
+    background-color: rgb(0,122,255);
+    font-weight: bold;
 }
