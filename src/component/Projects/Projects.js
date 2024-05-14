@@ -33,15 +33,15 @@ const ProjectCard = ({props}) => {
   }
 
   return (
-    <a href={navLink}>
-      <div className="project-card" id={cardNumber}>
-      <h3 className="card-title">{title}</h3>
-      <p className="card-description">{description}</p>
-      <div className="tech-skill-container">
-        {techSkills}
-      </div>
+    <div className="project-card" id={cardNumber}>
+      <a href={navLink}>
+        <h3 className="card-title">{title}</h3>
+        <p className="card-description">{description}</p>
+        <div className="tech-skill-container">
+          {techSkills}
+        </div>
+      </a>
     </div>
-    </a>
   );
 }
 
@@ -59,23 +59,26 @@ const Projects = () => {
     {cardNumber: "card-1",
     title: "Movie Ranker",
      navLink: "https://movieranker-7upc.onrender.com/",
-     description: "temporary placement",
+     description: "A entertainment media app that allows movie lovers to rank his/her favorite movies and communicate with other movie lovers via forums.",
      techStackArray: ["Python", "Flask", "MySQL", "JavaScript", "HTML", "CSS"]
     },
     {cardNumber: "card-2",
     title: "React Weather App",
     navLink: "https://prod.d22vrjavkdl5lk.amplifyapp.com/!%5Bimage%5D(https://github.com/j0rdanbruce/React-Weather-App/assets/95323815/7816a851-17ac-42fd-9aa6-30223cac5e25)",
-    description: "temporary placement",
-    techStackArray: ["React JS", "JavaScript", "MySQL", "HTML", "CSS"]
+    description: "A weather forecast app designed to display weather data based on geographical location inputs.",
+    techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
     }
   ];
 
   return (
     <div style={projectsStyle}>
        <ProjectsTitle />
-       {projectData.map((project) => {
+       <div className="project-container">
+        {projectData.map((project) => {
           return(<ProjectCard props={project} />);
-       })}
+        })}
+       </div>
+       
     </div>
   );
 }
