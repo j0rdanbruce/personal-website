@@ -1,0 +1,112 @@
+
+
+.projects-title {
+    position: absolute;
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.projects-subtitle {
+    color: white;
+    font-size: 1.50rem;
+    font-weight: bold;
+}
+
+.projects-header {
+    color: white;
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+
+.projects-subheader {
+    color: rgb(0,122,255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+     /* The css animation code for the blue swipe color transition. */
+     background: linear-gradient(to right, rgb(0,122,255), rgb(0,122,255) 50%, white 50%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-size: 200% 100%;
+     background-position: 100%;
+     transition: background-position 0.7s ease;
+}
+.projects-subheader:hover {
+    background-position: 0 100%;
+}
+/* END code for the vlue swipe color transition. */
+
+.project-container {
+    position: relative;
+    top: 45%;
+    height: 50%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-card {
+    position: relative;
+    width: 425px;
+    min-height: 475px;
+    height: auto;
+    margin: 0 25px;
+    border-radius: 7%;
+    background-color: rgb(35,41,68);
+
+    transition: transform 0.4s ease;
+}
+.project-card a {
+    text-decoration: none;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+h3.card-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.card-description {
+    position: relative;
+    top: 75px;
+    width: 80%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tech-skill-container {
+    position: absolute;
+    bottom: 9%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-skill {
+    height: 35px;
+    min-width: fit-content;
+    margin: 0 8px 7px;
+    padding: 1.1% 4%;
+    border-radius: 5%;
+    background-color: rgb(0,122,255);
+    font-weight: bold;
+    color: white;
+}
