@@ -1,0 +1,53 @@
+
+.info-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: solid white 1px;
+}
+
+.link-nav-container {
+    border-bottom: solid white 1px;
+}
+
+.link-nav-container li {
+    display: inline-block;
+
+    transition: color 0.5s;
+    transition: filter 0.5s;
+}
+
+.link-nav-container li button {
+    background:none;
+    border:none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.information-container p {
+    color: white;
+}
+
+.about-container {
+    position: absolute;
+}
+
+.about-title {
+    position: absolute;
+    margin-top: 3%;
+    left: 10%;
+    border: solid white 1px;
+}
+
+.about-subtitle {
+    color: white;
+    font-weight: bold;
+    font-size: 1.50rem;
+}
+
+.about-header {
+    color: white;
+    font-size: 2.85rem;
+    font-weight: bold;
+}

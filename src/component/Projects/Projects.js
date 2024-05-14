@@ -49,7 +49,7 @@ const Projects = () => {
 
   const { height, width } = useWindowDimensions();
   const projectsStyle = {
-    position: 'absolute',
+    position: 'relative',
     height: height,
     width: width,
     backgroundColor: 'rgb(12,15,26)'
@@ -78,7 +78,6 @@ const Projects = () => {
           return(<ProjectCard props={project} />);
         })}
        </div>
-       
     </div>
   );
 }
