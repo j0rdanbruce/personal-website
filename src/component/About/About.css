@@ -1,8 +1,11 @@
 
 .info-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
+    width: 60%;
+    height: 50%;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
     border: solid white 1px;
 }
 
@@ -25,8 +28,25 @@
     color: white;
 }
 
-.information-container p {
+.information-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.table-description {
     color: white;
+}
+
+.table-info-container {
+    position: relative;
+    width: 30%;
+    height: auto;
+    border: yellow solid 1px;
+}
+
+.table-image-container img {
+    width: 100px;
+    height: auto;
 }
 
 .about-container {
