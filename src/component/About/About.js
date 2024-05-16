@@ -13,23 +13,23 @@ import videogames from "../../Images/about_images/videogames.png";
 const Information = () => {
   const informationData = new Map();
   informationData.set("Extracurriculars", [
-    {description: "volutneer code instructor..",
+    {description: "In my spare time outside of school, I am a volunteer code instructor working with the 'Code Club' organization.",
      image: teaching
     }
   ]);
   informationData.set("School", [
-    {description: "I go to NJIT.",
+    {description: "I am a Computer Science major at New Jersey Institute of Technology with a focus in web development, which is the career path that I want to pursue professionally in the future.",
      image: highlander
     }
   ]);
   informationData.set("Hobbies", [
-    {description: "I swim.",
+    {description: "I like to do long distance swimming and I one of my future goals is to compete in a open-water swimming marathon.",
      image: swimming
     },
-    {description: "I like to play video games.",
+    {description: "I have been playing video games since I was a child. My first console was the Nintendo Gamecube and my favorite game is God of War.",
      image: videogames
     },
-    {description: "I am an avid movie watcher, especially scary movies. My favorite horror movie is an Alien movie!",
+    {description: "I am an avid movie watcher, especially scary movies. My favorite horror movie is any from the Alien franchise!",
      image: scary_movie
     }
   ]);
@@ -38,27 +38,33 @@ const Information = () => {
 
   const infoDataEntries = [...informationData.keys()].map((infoKey) => {
     return (
-      <li><button value={infoKey} onClick={(event) => handleButtonClick(event)}>{infoKey}</button></li>
+      <li><button className="info-tab-btn" value={infoKey} onClick={(event) => handleButtonClick(event)}>{infoKey}</button></li>
     );
   });
 
-  const infoImageStyle = {
-    width: '10%',
-    height: 'auto'
-  }
-  const currentInfoData = currentTab.map((info) => {
+  const currentInfoData = currentTab.map((info, index) => {
+    const infoDataStyle = {
+      borderLeft: index > 0 && index < (currentTab.length -1)  ? 'solid white 1px' : 'none',
+      borderRight: index > 0 && index < (currentTab.length -1)  ? 'solid white 1px' : 'none'
+    }
+
     return(
-      <table className="table-info-container">
-        <tr><p className="table-description">{info.description}</p></tr>
-        <tr><div className="table-image-container"><img src={info.image} alt="" /></div></tr>
+      <table className="table-info-container" style={infoDataStyle}>
+        <tr className="tr-description"><p>{info.description}</p></tr>
+        <tr className="tr-image"><img src={info.image} alt="" /></tr>
       </table>
     );
   });
 
   function handleButtonClick (event) {
-    const tabName = event.target.value;
+    const tabName = event.target;
+    const infoContainer = document.getElementsByClassName("information-container")[0];
 
-    setCurrentTab(informationData.get(tabName));
+    setCurrentTab(informationData.get(tabName.value));
+    infoContainer.style.animation = 'fade-in 0.7s normal';
+    setTimeout(() => {
+      infoContainer.style.animation = 'none';
+    }, 700);
   }
 
   return (
@@ -66,7 +72,7 @@ const Information = () => {
       <ul className="link-nav-container">
         {infoDataEntries}
       </ul>
-      <div className="information-container">
+      <div className="information-container" id="information-container">
         {currentInfoData}
       </div>
     </div>
