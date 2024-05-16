@@ -23,7 +23,7 @@ const Information = () => {
     }
   ]);
   informationData.set("Hobbies", [
-    {description: "I like to do long distance swimming and I one of my future goals is to compete in a open-water swimming marathon.",
+    {description: "I like to do long distance swimming and one of my future goals is to compete in a open-water swimming marathon.",
      image: swimming
     },
     {description: "I have been playing video games since I was a child. My first console was the Nintendo Gamecube and my favorite game is God of War.",
