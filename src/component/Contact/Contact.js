@@ -39,6 +39,7 @@ const Contact = () => {
 
   const handleContactBtnClick = (event) => {
     event.preventDefault();
+    
     sendEmail();
     handleClose();
   }
