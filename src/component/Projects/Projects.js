@@ -15,6 +15,7 @@ const ProjectsTitle = ({props}) => {
   );
 }
 
+
 const ProjectCard = ({props}) => {
   const { cardNumber, title, navLink, description, techStackArray } = props;
 
