@@ -15,7 +15,6 @@ const ProjectsTitle = ({props}) => {
   );
 }
 
-
 const ProjectCard = ({props}) => {
   const { cardNumber, title, navLink, description, techStackArray } = props;
 
@@ -58,7 +57,7 @@ const Projects = () => {
     {cardNumber: "card-2",
     title: "React Weather App",
     navLink: "https://prod.d22vrjavkdl5lk.amplifyapp.com/!%5Bimage%5D(https://github.com/j0rdanbruce/React-Weather-App/assets/95323815/7816a851-17ac-42fd-9aa6-30223cac5e25)",
-    description: "A weather forecast app designed to display weather data based on geographical location inputs.",
+    description: "A weather forecast app designed to display weather data based on geographical location input.",
     techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
     }
   ];
