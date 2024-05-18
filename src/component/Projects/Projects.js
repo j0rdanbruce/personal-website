@@ -24,14 +24,6 @@ const ProjectCard = ({props}) => {
     );
   });
 
-  function handleMouseHover() {
-    const projectCards = document.getElementsByClassName("project-card");
-
-    for (const card in projectCards) {
-      card.style.height = '700px';
-    }
-  }
-
   return (
     <div className="project-card" id={cardNumber}>
       <a href={navLink}>
