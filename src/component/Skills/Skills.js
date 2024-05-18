@@ -117,6 +117,7 @@ const Skills = () => {
   });
 
   const style = {
+    position: 'relative',
     backgroundColor: 'rgb(35,41,68)',
     height: height,
     width: width,

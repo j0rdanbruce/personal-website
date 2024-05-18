@@ -24,14 +24,6 @@ const ProjectCard = ({props}) => {
     );
   });
 
-  function handleMouseHover() {
-    const projectCards = document.getElementsByClassName("project-card");
-
-    for (const card in projectCards) {
-      card.style.height = '700px';
-    }
-  }
-
   return (
     <div className="project-card" id={cardNumber}>
       <a href={navLink}>
@@ -49,7 +41,7 @@ const Projects = () => {
 
   const { height, width } = useWindowDimensions();
   const projectsStyle = {
-    position: 'absolute',
+    position: 'relative',
     height: height,
     width: width,
     backgroundColor: 'rgb(12,15,26)'
@@ -65,7 +57,7 @@ const Projects = () => {
     {cardNumber: "card-2",
     title: "React Weather App",
     navLink: "https://prod.d22vrjavkdl5lk.amplifyapp.com/!%5Bimage%5D(https://github.com/j0rdanbruce/React-Weather-App/assets/95323815/7816a851-17ac-42fd-9aa6-30223cac5e25)",
-    description: "A weather forecast app designed to display weather data based on geographical location inputs.",
+    description: "A weather forecast app designed to display weather data based on geographical location input.",
     techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
     }
   ];
@@ -78,7 +70,6 @@ const Projects = () => {
           return(<ProjectCard props={project} />);
         })}
        </div>
-       
     </div>
   );
 }

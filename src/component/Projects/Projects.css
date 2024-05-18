@@ -25,14 +25,14 @@
     font-weight: bold;
     text-decoration: none;
 
-     /* The css animation code for the blue swipe color transition. */
-     background: linear-gradient(to right, rgb(0,122,255), rgb(0,122,255) 50%, white 50%);
-     background-clip: text;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     background-size: 200% 100%;
-     background-position: 100%;
-     transition: background-position 0.7s ease;
+    /* The css animation code for the blue swipe color transition. */
+    background: linear-gradient(to right, rgb(0,122,255), rgb(0,122,255) 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.7s ease;
 }
 .projects-subheader:hover {
     background-position: 0 100%;
