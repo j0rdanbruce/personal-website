@@ -39,7 +39,7 @@ const Contact = () => {
 
   const handleContactBtnClick = (event) => {
     event.preventDefault();
-    
+
     sendEmail();
     handleClose();
   }
@@ -47,6 +47,7 @@ const Contact = () => {
   return(
     <>
       <button className="contact-btn" onClick={handleShow}>Contact Me <span><img className="letter-logo" src={letter} alt="" /></span></button>
+      
       <Modal
         show={show}
         onHide={handleClose}
