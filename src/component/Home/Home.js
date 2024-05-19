@@ -5,11 +5,16 @@ import Button from "react-bootstrap/Button";
 import useWindowDimensions from '../../HelperFunctions';
 import headshot from "../../Images/headshot.jpg"
 
+//helper functions go here
+function scrollToElement(element) {
+  element.scrollIntoView();
+}
+
 const IntroductionInfo = ({props}) => {
     const { title, description } = props;
 
   return (
-    <div className="intro-container">
+    <div className="Home intro-container">
       <h1 className="intro-title">{title}</h1>
       <p className="intro-description">{description}</p>
     </div>
@@ -26,22 +31,24 @@ const Headshot = () => {
 }
 
 const QuickInfo = ({props}) => {
-  const { title, description, linkName, linkRef } = props;
+  const { title, description, linkName, linkRef, pageRef } = props;
+
+  function handleBtnClick() {
+    const element = document.getElementsByClassName(pageRef)[0];
+
+    scrollToElement(element);
+  }
 
   return (
     <div className="quick-info">
       <h5 className="quick-info-title">{title}</h5>
       <p className="quick-info-description">{description}</p>
-      <a className="quick-info-link" href={linkRef}>{linkName}<span className="arrow-link">&#8594;</span></a>
+      <a className="quick-info-link" href={linkRef} onClick={handleBtnClick}>{linkName}<span className="arrow-link">&#8594;</span></a>
     </div>
   );
 }
 
 const NextPageButton = () => {
-
-  function scrollToElement(element) {
-    element.scrollIntoView();
-  }
 
   function handleNextPageBtnClick() {
     const element = document.getElementsByClassName("skills-subtitle")[0];
@@ -69,12 +76,14 @@ const Home = () => {
     { title: "ABOUT ME",
       description: "I am a computer science student with a passion for software development and a drive for self-improvement.",
       linkName: "LEARN MORE",
-      linkRef: "#"
+      linkRef: "#",
+      pageRef: "About"
     },
     { title: "MY WORK",
       description: "Through my college coursework and non-academic courses online, I have gained experience in a variety of technology stacks.",
       linkName: "BROWSE PORTFOLIO",
-      linkRef: "#"
+      linkRef: "#",
+      pageRef: "Portfolio"
     }
   ];
   const myInfoMap = myInfo.map((info) => {

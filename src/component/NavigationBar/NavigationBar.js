@@ -3,18 +3,23 @@ import React, { useEffect } from "react";
 const NavLink = (props) => {
   const { navLinkName } = props;
 
+  function handleLinkClick() {
+    const element = document.getElementsByClassName(navLinkName)[0];
+
+    element.scrollIntoView();
+  }
+
   return (
-    <li><a
+    <li><button
           className="navbar-link"
-          id={navLinkName}
-          href={navLinkName}
+          onClick={handleLinkClick}
         > {navLinkName}
-    </a></li>
+    </button></li>
   );
 }
 
 const NavigationBar = () => {
-  const navLinks = ['Home', 'About', 'Skills', 'Portfolio'];
+  const navLinks = ['Home', 'Skills', 'Portfolio', 'About'];
   const navLinkMap = navLinks.map((link) => {
     return (
       <NavLink navLinkName={link} />

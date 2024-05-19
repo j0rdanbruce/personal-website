@@ -8,7 +8,7 @@ const ProjectsTitle = ({props}) => {
 
   return (
     <div className="projects-title">
-      <p className="projects-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY PROJECTS</p>
+      <p className="Portfolio projects-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY PROJECTS</p>
       <h2 className="projects-header">Take a look at some of my latest projects</h2>
       <a className="projects-subheader" href={gitHubProfileLink}>Checkout my GitHub Repo<span className="arrow-link">&#8594;</span></a>
     </div>
