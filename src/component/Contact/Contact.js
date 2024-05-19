@@ -46,7 +46,7 @@ const Contact = () => {
 
   return(
     <>
-      <button className="contact-btn" onClick={handleShow}>Contact Me <span><img className="letter-logo" src={letter} alt="" /></span></button>
+      <button className="contact-btn" onClick={handleShow}><span><p>Contact Me</p><img className="letter-logo" src={letter} alt="" /></span></button>
       
       <Modal
         show={show}

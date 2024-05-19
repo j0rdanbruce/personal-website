@@ -5,19 +5,44 @@ import Button from "react-bootstrap/Button";
 import useWindowDimensions from '../../HelperFunctions';
 import headshot from "../../Images/headshot.jpg"
 
+//Font Awesom imports go here
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareGithub, faLinkedin, faSquareInstagram, faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
+
 //helper functions go here
 function scrollToElement(element) {
   element.scrollIntoView();
 }
 
 const IntroductionInfo = ({props}) => {
-    const { title, description } = props;
+    const { title } = props;
 
   return (
     <div className="Home intro-container">
       <h1 className="intro-title">{title}</h1>
-      <p className="intro-description">{description}</p>
+      <SocialMediaBar />
     </div>
+  );
+}
+
+const SocialMediaBar = () => {
+
+  const socialMediaLinks = [
+    {name: "LinkedIn", link: "https://www.linkedin.com/in/jordan-bruce-739160254/", icon: <FontAwesomeIcon className="media-icon" icon={faLinkedin} />},
+    {name: "GitHub", link: "https://github.com/j0rdanbruce", icon: <FontAwesomeIcon className="media-icon" icon={faSquareGithub} />},
+    {name: "Instagram", link: "https://www.instagram.com/jbruce_2015/", icon: <FontAwesomeIcon className="media-icon" icon={faSquareInstagram} />},
+    {name: "Facebook", link: "https://www.facebook.com/jordan.bruce.5473", icon: <FontAwesomeIcon className="media-icon" icon={faSquareFacebook} />}
+  ]
+  const mediaLinksMap = socialMediaLinks.map((media) => {
+    return(
+      <li><a className={media.name} href={media.link}>{media.icon}</a></li>
+    );
+  });
+
+  return(
+    <ul className="social-media-container">
+      {mediaLinksMap}
+    </ul>
   );
 }
 
@@ -91,7 +116,6 @@ const Home = () => {
       <tr>
         <QuickInfo props={info} />
       </tr>
-      
     );
   });
 

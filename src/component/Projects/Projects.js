@@ -59,6 +59,12 @@ const Projects = () => {
     navLink: "https://prod.d22vrjavkdl5lk.amplifyapp.com/!%5Bimage%5D(https://github.com/j0rdanbruce/React-Weather-App/assets/95323815/7816a851-17ac-42fd-9aa6-30223cac5e25)",
     description: "A weather forecast app designed to display weather data based on geographical location input.",
     techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
+    },
+    {cardNumber: "card-3",
+    title: "Personal Website",
+    navLink: "https://www.jordanbruce.me/",
+    description: "My personal website to showcase my skills, projects, and additional information about me.",
+    techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
     }
   ];
 
