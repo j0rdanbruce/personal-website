@@ -8,7 +8,7 @@ const ProjectsTitle = ({props}) => {
 
   return (
     <div className="projects-title">
-      <p className="projects-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY PROJECTS</p>
+      <p className="Portfolio projects-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY PROJECTS</p>
       <h2 className="projects-header">Take a look at some of my latest projects</h2>
       <a className="projects-subheader" href={gitHubProfileLink}>Checkout my GitHub Repo<span className="arrow-link">&#8594;</span></a>
     </div>
@@ -58,6 +58,12 @@ const Projects = () => {
     title: "React Weather App",
     navLink: "https://prod.d22vrjavkdl5lk.amplifyapp.com/!%5Bimage%5D(https://github.com/j0rdanbruce/React-Weather-App/assets/95323815/7816a851-17ac-42fd-9aa6-30223cac5e25)",
     description: "A weather forecast app designed to display weather data based on geographical location input.",
+    techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
+    },
+    {cardNumber: "card-3",
+    title: "Personal Website",
+    navLink: "https://www.jordanbruce.me/",
+    description: "My personal website to showcase my skills, projects, and additional information about me.",
     techStackArray: ["React JS", "JavaScript", "HTML", "CSS"]
     }
   ];

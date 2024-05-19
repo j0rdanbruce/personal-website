@@ -41,7 +41,7 @@
 
 .project-container {
     position: relative;
-    top: 45%;
+    top: 35%;
     height: 50%;
     width: fit-content;
     margin-left: auto;
@@ -52,9 +52,8 @@
 
 .project-card {
     position: relative;
-    width: 425px;
-    min-height: 475px;
-    height: auto;
+    width: 375px;
+    height: 425px;
     margin: 0 25px;
     border-radius: 7%;
     background-color: rgb(35,41,68);

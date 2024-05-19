@@ -20,7 +20,7 @@ import python from "../../Images/skill_icons/python.png";
 const PageTitle = () => {
 
   return (
-    <div className="page-title">
+    <div className="Skills page-title">
       <p className="skills-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY SKILLS</p>
       <div className="bottom-container">
         <h2 className="skills-header">Programming Technologies</h2>

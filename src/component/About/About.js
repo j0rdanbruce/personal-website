@@ -90,7 +90,7 @@ const About = () => {
 
   return(
     <div className="about-container" style={aboutMeStyle}>
-      <div className="about-title">
+      <div className="About about-title">
         <p className="about-subtitle"> <span style={{color: 'rgb(0,122,255)'}}>/ </span>MY LIFE</p>
         <h2 className="about-header">About Me</h2>
       </div>
